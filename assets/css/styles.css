@@ -475,32 +475,56 @@ p {
   font-size: clamp(3rem, 7vw, 6rem);
 }
 
-.timeline {
+.experience-list {
   list-style: none;
   margin: 0;
   padding: 0;
   border-top: 1px solid var(--ink);
 }
 
-.timeline li {
+.experience-list li {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr) minmax(220px, 0.65fr);
+  grid-template-columns: 190px minmax(0, 1fr) minmax(190px, 0.55fr);
   gap: 2rem;
+  align-items: start;
   padding-block: 2rem;
   border-bottom: 1px solid var(--line);
 }
 
-.timeline time,
-.timeline .timeline-meta {
+.experience-date,
+.experience-location {
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.72rem;
+  line-height: 1.6;
 }
 
-.timeline strong {
+.experience-date {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.45rem;
+}
+
+.experience-list strong {
   display: block;
   margin-bottom: 0.35rem;
   font-size: 1.12rem;
+}
+
+.experience-list a,
+.experience-company {
+  display: inline-flex;
+  width: fit-content;
+  color: var(--forest);
+}
+
+.experience-list a {
+  border-bottom: 1px solid transparent;
+}
+
+.experience-list a:hover,
+.experience-list a:focus-visible {
+  border-bottom-color: currentColor;
 }
 
 .skill-groups {
@@ -1137,7 +1161,7 @@ td {
     grid-column: 2;
   }
 
-  .timeline li {
+  .experience-list li {
     grid-template-columns: 1fr;
     gap: 0.6rem;
   }

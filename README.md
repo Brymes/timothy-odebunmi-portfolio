@@ -5,7 +5,7 @@ A responsive, framework-free portfolio and academic management website built for
 ## Features
 
 - Editorial home page with profile summary and professional links
-- About page with education timeline, technical skills, interests, and a semantic table
+- About page with complete work chronology, technical skills, interests, and a semantic education table
 - Three verified GitHub projects rendered dynamically from a JavaScript array
 - Academic planner with add, complete, delete, filter, progress, and `localStorage` persistence
 - Muted local planner demonstration video for the multimedia requirement
