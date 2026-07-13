@@ -1,43 +1,24 @@
-<svg width="900" height="1040" viewBox="0 0 900 1040" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="avatarTitle avatarDesc">
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="avatarTitle avatarDesc">
   <title id="avatarTitle">Illustrated portrait of Timothy Odebunmi</title>
-  <desc id="avatarDesc">A stylized academic portrait with a navy background, teal glow, and gold accents.</desc>
-  <defs>
-    <linearGradient id="bg" x1="110" y1="40" x2="780" y2="980" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#11243D"/>
-      <stop offset="1" stop-color="#08111D"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="224" y1="170" x2="700" y2="830" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#31D0C7"/>
-      <stop offset="1" stop-color="#F0C766"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 410) rotate(90) scale(280 280)">
-      <stop stop-color="#31D0C7" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#31D0C7" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="900" height="1040" rx="54" fill="url(#bg)"/>
-  <circle cx="654" cy="192" r="104" fill="#31D0C7" fill-opacity=".08"/>
-  <circle cx="198" cy="838" r="132" fill="#F0C766" fill-opacity=".08"/>
-  <circle cx="450" cy="390" r="286" fill="url(#glow)"/>
-  <path d="M128 172C235 112 330 84 450 84C593 84 703 120 788 182" stroke="#93A9C5" stroke-opacity=".25" stroke-width="2"/>
-  <path d="M124 856C228 922 328 958 448 958C587 958 688 925 776 864" stroke="#93A9C5" stroke-opacity=".22" stroke-width="2"/>
-  <rect x="132" y="122" width="636" height="796" rx="42" fill="rgba(255,255,255,0.04)" stroke="#93A9C5" stroke-opacity=".18"/>
-  <circle cx="450" cy="362" r="154" fill="#0F2036" stroke="url(#accent)" stroke-width="6"/>
-  <path d="M330 410C346 483 393 526 450 526C507 526 554 483 570 410C578 364 565 300 538 271C518 249 488 238 450 238C412 238 381 249 361 271C334 300 322 363 330 410Z" fill="#1B2E49"/>
-  <path d="M311 666C319 597 358 552 450 552C542 552 581 597 589 666L605 824C533 860 484 880 450 880C416 880 367 860 295 824L311 666Z" fill="#102033"/>
-  <path d="M362 624C383 607 413 597 450 597C487 597 517 607 538 624C528 664 494 690 450 690C406 690 372 664 362 624Z" fill="#EEDFC7"/>
-  <path d="M380 366C382 342 391 324 407 312C420 302 435 297 450 297C465 297 480 302 493 312C509 324 518 342 520 366C522 390 517 413 505 434C492 456 475 467 450 467C425 467 408 456 395 434C383 413 378 390 380 366Z" fill="#EEDFC7"/>
-  <ellipse cx="403" cy="371" rx="18" ry="12" fill="#0A1320"/>
-  <ellipse cx="497" cy="371" rx="18" ry="12" fill="#0A1320"/>
-  <path d="M418 418C434 430 466 430 482 418" stroke="#C68C61" stroke-width="6" stroke-linecap="round"/>
-  <path d="M324 292C345 229 393 203 450 203C507 203 555 229 576 292C578 315 575 332 565 353C550 323 531 302 507 290C479 276 421 276 393 290C369 302 350 323 335 353C325 332 322 315 324 292Z" fill="#1B2B43"/>
-  <circle cx="450" cy="548" r="20" fill="#31D0C7" fill-opacity=".26"/>
-  <rect x="278" y="760" width="344" height="60" rx="18" fill="#0E2033" stroke="#93A9C5" stroke-opacity=".22"/>
-  <text x="450" y="799" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Timothy Odebunmi</text>
-  <text x="450" y="910" fill="#A7B9D4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="20" text-anchor="middle">Backend systems | Web design | Student portfolio</text>
-  <circle cx="220" cy="236" r="12" fill="#31D0C7"/>
-  <circle cx="680" cy="236" r="12" fill="#F0C766"/>
-  <circle cx="182" cy="748" r="14" fill="#31D0C7" fill-opacity=".9"/>
-  <circle cx="718" cy="748" r="14" fill="#F0C766" fill-opacity=".9"/>
+  <desc id="avatarDesc">A restrained portrait illustration in warm neutral and forest green tones.</desc>
+  <rect width="800" height="1000" fill="#E9E3D7"/>
+  <path d="M0 820L800 610V1000H0V820Z" fill="#D8D1C4"/>
+  <path d="M58 106H255" stroke="#245B46" stroke-width="3"/>
+  <path d="M545 894H742" stroke="#B97824" stroke-width="3"/>
+  <text x="58" y="86" fill="#245B46" font-family="IBM Plex Mono, monospace" font-size="18" letter-spacing="4">TIMOTHY ODEBUNMI</text>
+  <circle cx="400" cy="385" r="190" fill="#F5F2EA" stroke="#BDB5A5" stroke-width="2"/>
+  <path d="M228 910C238 730 294 635 400 635C506 635 562 730 572 910H228Z" fill="#245B46"/>
+  <path d="M324 640C339 600 364 576 400 576C436 576 461 600 476 640C462 684 435 706 400 706C365 706 338 684 324 640Z" fill="#9A6545"/>
+  <path d="M282 420C286 518 330 587 400 587C470 587 514 518 518 420C522 336 482 278 400 278C318 278 278 336 282 420Z" fill="#A96F4C"/>
+  <path d="M274 392C276 294 326 238 400 238C474 238 524 294 526 392C493 337 452 309 400 309C348 309 307 337 274 392Z" fill="#17211B"/>
+  <path d="M280 426C262 414 250 429 258 455C263 473 273 484 289 488" fill="#A96F4C"/>
+  <path d="M520 426C538 414 550 429 542 455C537 473 527 484 511 488" fill="#A96F4C"/>
+  <ellipse cx="348" cy="421" rx="10" ry="7" fill="#17211B"/>
+  <ellipse cx="452" cy="421" rx="10" ry="7" fill="#17211B"/>
+  <path d="M359 497C381 512 419 512 441 497" stroke="#73452F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M318 384C336 373 354 371 374 378" stroke="#17211B" stroke-width="7" stroke-linecap="round"/>
+  <path d="M426 378C446 371 464 373 482 384" stroke="#17211B" stroke-width="7" stroke-linecap="round"/>
+  <path d="M400 431L388 470H414" stroke="#875539" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M286 752C314 720 352 704 400 704C448 704 486 720 514 752" stroke="#F5F2EA" stroke-opacity=".36" stroke-width="2"/>
+  <text x="58" y="945" fill="#626A64" font-family="IBM Plex Mono, monospace" font-size="16" letter-spacing="2">ENGINEER / CYBERSECURITY STUDENT</text>
 </svg>
-

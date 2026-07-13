@@ -3,39 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#07111f">
-    <meta
-      name="description"
-      content="Timothy Odebunmi's responsive student portfolio and academic management website for COS 106."
-    >
-    <title>Timothy Odebunmi | Home</title>
+    <meta name="theme-color" content="#f5f2ea">
+    <meta name="description" content="Timothy Odebunmi - software engineer and cybersecurity student portfolio.">
+    <title>Timothy Odebunmi | Software Engineer</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/main.js" defer></script>
   </head>
   <body data-page="home">
     <header class="site-header">
       <div class="container nav-shell">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-label="Timothy Odebunmi home">
           <span class="brand-mark">TO</span>
-          <span>
-            <strong>Timothy Odebunmi</strong>
-            <small>Student portfolio and planner</small>
-          </span>
+          <span><strong>Timothy Odebunmi</strong><small>Engineer / Cybersecurity student</small></span>
         </a>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
-          <span>Menu</span>
-        </button>
-        <nav class="site-nav" id="primary-navigation" data-nav-panel aria-label="Primary">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+        <nav class="site-nav" id="primary-navigation" data-nav-panel aria-label="Primary navigation">
           <a href="index.html">Home</a>
-          <a href="about.html">About Me</a>
+          <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
-          <a href="planner.html">Academic Planner</a>
+          <a href="planner.html">Planner</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -44,138 +34,61 @@
     <main>
       <section class="hero container">
         <div class="hero-copy reveal">
-          <p class="eyebrow">COS 106 Term Project</p>
+          <p class="eyebrow">Software engineer / Cybersecurity student</p>
           <h1>Timothy Odebunmi</h1>
           <p class="lead">
-            A polished student portfolio and academic management website shaped from my resume, with a focus on clean
-            navigation, responsive design, and practical JavaScript interactions.
+            I build dependable backend systems, data pipelines, and blockchain products that make complex operations easier to run.
           </p>
           <p>
-            I am a software engineer with backend, blockchain, and infrastructure experience, and a B.Sc CyberSecurity
-            student at Miva. This site brings together my profile, achievements, project samples, academic planning, and
-            contact details in one professional workspace.
+            My work spans production infrastructure, developer tools, payment systems, and automation. I am currently studying CyberSecurity at Miva University while continuing to grow as a systems-focused engineer.
           </p>
-          <div class="button-row" style="margin-top: 1.4rem;">
-            <a class="button button-primary" href="projects.html">Explore projects</a>
-            <a class="button button-secondary" href="planner.html">Open planner</a>
-            <a class="button button-ghost" href="about.html">Read about me</a>
+          <div class="button-row">
+            <a class="button button-primary" href="projects.html">View selected work</a>
+            <a class="button button-secondary" href="contact.html">Contact me</a>
           </div>
-          <dl class="stat-strip">
-            <div>
-              <dt>Experience</dt>
-              <dd>5+ years</dd>
-            </div>
-            <div>
-              <dt>Education</dt>
-              <dd>3 milestones</dd>
-            </div>
-            <div>
-              <dt>Skill focus</dt>
-              <dd>Web + systems</dd>
-            </div>
-          </dl>
+          <div class="professional-links" aria-label="Professional links">
+            <a href="mailto:tbodebunmijnr@gmail.com">Email</a>
+            <a href="https://github.com/Brymes" target="_blank" rel="noreferrer noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/brymes" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          </div>
         </div>
 
-        <aside class="hero-panel reveal">
-          <div class="avatar-frame">
-            <img src="assets/images/avatar.svg" alt="Illustrated portrait of Timothy Odebunmi">
-          </div>
-          <div class="hero-meta">
-            <div class="audio-card">
-              <p class="card-kicker">Audio intro</p>
-              <h3>Short spoken welcome</h3>
-              <p>Listen to a local voice note that introduces the portfolio and shows the multimedia requirement.</p>
-              <audio controls preload="none">
-                <source src="assets/media/intro.wav" type="audio/wav">
-              </audio>
-            </div>
-            <ul class="mini-facts">
-              <li>
-                <strong>School</strong>
-                <span>Miva University, B.Sc CyberSecurity, expected 2026</span>
-              </li>
-              <li>
-                <strong>Strength</strong>
-                <span>Reliable systems, thoughtful UI, and real-world delivery</span>
-              </li>
-              <li>
-                <strong>Tools</strong>
-                <span>HTML, CSS, JavaScript, Rust, Python, cloud platforms</span>
-              </li>
-            </ul>
-          </div>
-        </aside>
+        <figure class="hero-portrait reveal">
+          <img src="assets/images/avatar.svg" alt="Illustrated portrait of Timothy Odebunmi">
+          <figcaption class="hero-caption"><span>Lagos, Nigeria</span><span>Open to thoughtful engineering work</span></figcaption>
+        </figure>
       </section>
+
+      <dl class="profile-meta container reveal">
+        <div><dt>Experience</dt><dd>5+ years</dd></div>
+        <div><dt>Current study</dt><dd>B.Sc CyberSecurity</dd></div>
+        <div><dt>Core focus</dt><dd>Backend and systems</dd></div>
+      </dl>
 
       <section class="section container reveal">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Why this portfolio works</p>
-            <h2>Built to look professional and still feel personal.</h2>
+            <p class="section-label">Profile</p>
+            <h2>Engineering with clarity and purpose.</h2>
           </div>
-          <p>
-            Every section is meant to help a reviewer understand who I am, what I build, and how I manage academic work
-            alongside technical growth.
-          </p>
+          <p>A practical view of the experience, study, and working principles behind the projects in this portfolio.</p>
         </div>
-        <div class="info-grid">
-          <article class="panel">
-            <h3>Brief biography</h3>
-            <p>
-              Timothy Odebunmi is a software engineer with experience in backend systems, blockchain products,
-              automation, and cloud infrastructure. His work spans reward pipelines, payout systems, secure messaging,
-              and student-facing operations tools.
-            </p>
-            <ul>
-              <li>Backend-first engineering mindset</li>
-              <li>Practical experience with data pipelines and APIs</li>
-              <li>Interested in systems, security, and product quality</li>
-            </ul>
-          </article>
-          <article class="panel">
-            <h3>What the website includes</h3>
-            <ul>
-              <li>Homepage with profile summary and welcome message</li>
-              <li>About page with education, goals, skills, and hobbies</li>
-              <li>Projects page with three case-study style examples</li>
-              <li>Academic planner with add, complete, and delete actions</li>
-              <li>Contact form with JavaScript validation</li>
-            </ul>
-          </article>
-          <article class="panel">
-            <h3>Professional links</h3>
-            <ul>
-              <li><a href="mailto:tbodebunmijnr@gmail.com">tbodebunmijnr@gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/in/brymes" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
-              <li><a href="https://github.com/Brymes" target="_blank" rel="noreferrer noopener">GitHub</a></li>
-              <li><a href="https://linktr.ee/brymes" target="_blank" rel="noreferrer noopener">Linktree</a></li>
-            </ul>
-          </article>
-        </div>
-      </section>
 
-      <section class="section container reveal">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Quick strengths</p>
-            <h2>Focused experience from real engineering work.</h2>
-          </div>
-        </div>
-        <div class="summary-grid">
-          <article class="mini-card">
-            <span class="card-kicker">Engineering</span>
-            <h3>Backend systems</h3>
-            <p>Reliable APIs, ETL, data pipelines, automation, and deployment workflows.</p>
+        <div class="editorial-list">
+          <article class="editorial-row">
+            <span class="row-number">01</span>
+            <h3>Engineering background</h3>
+            <p>I have worked across backend APIs, data pipelines, automation, cloud infrastructure, and blockchain systems. I enjoy projects where reliability and clear operational thinking matter.</p>
           </article>
-          <article class="mini-card">
-            <span class="card-kicker">Product</span>
-            <h3>User-facing delivery</h3>
-            <p>Frontends, dashboards, and forms that make technical work easier to use.</p>
+          <article class="editorial-row">
+            <span class="row-number">02</span>
+            <h3>Cybersecurity studies</h3>
+            <p>My B.Sc program at Miva University is strengthening how I think about secure design, computing foundations, risk, and the responsibility that comes with building connected systems.</p>
           </article>
-          <article class="mini-card">
-            <span class="card-kicker">Student life</span>
-            <h3>Academic management</h3>
-            <p>Planners, routines, and study habits that make coursework easier to track.</p>
+          <article class="editorial-row">
+            <span class="row-number">03</span>
+            <h3>Reliable products</h3>
+            <p>I prefer understandable code, measurable outcomes, and tools that are calm to operate. Whether I am building a service or a user interface, the goal is dependable delivery for real people.</p>
           </article>
         </div>
       </section>
@@ -183,17 +96,12 @@
 
     <footer class="site-footer">
       <div class="container footer-shell">
-        <p>
-          Built by Timothy Odebunmi for COS 106. <span data-current-year></span>
-        </p>
+        <p>Timothy Odebunmi / COS 106 / <span data-current-year></span></p>
         <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="planner.html">Planner</a>
-          <a href="contact.html">Contact</a>
+          <a href="https://github.com/Brymes" target="_blank" rel="noreferrer noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/brymes" target="_blank" rel="noreferrer noopener">LinkedIn</a>
         </div>
       </div>
     </footer>
   </body>
 </html>
-

@@ -3,41 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#07111f">
-    <meta
-      name="description"
-      content="Interactive academic planner with add, complete, and delete task functionality."
-    >
+    <meta name="theme-color" content="#f5f2ea">
+    <meta name="description" content="Interactive academic planner for adding, completing, filtering, and deleting study tasks.">
     <title>Timothy Odebunmi | Academic Planner</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/main.js" defer></script>
   </head>
   <body data-page="planner">
     <header class="site-header">
       <div class="container nav-shell">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">TO</span>
-          <span>
-            <strong>Timothy Odebunmi</strong>
-            <small>Student portfolio and planner</small>
-          </span>
-        </a>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
-          <span>Menu</span>
-        </button>
-        <nav class="site-nav" id="primary-navigation" data-nav-panel aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Me</a>
-          <a href="projects.html">Projects</a>
-          <a href="planner.html">Academic Planner</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <a class="brand" href="index.html" aria-label="Timothy Odebunmi home"><span class="brand-mark">TO</span><span><strong>Timothy Odebunmi</strong><small>Engineer / Cybersecurity student</small></span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+        <nav class="site-nav" id="primary-navigation" data-nav-panel aria-label="Primary navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="planner.html">Planner</a><a href="contact.html">Contact</a></nav>
       </div>
     </header>
 
@@ -45,122 +26,58 @@
       <section class="page-hero container">
         <div class="hero-copy reveal">
           <p class="eyebrow">Academic planner</p>
-          <h1>Manage study tasks without losing momentum.</h1>
-          <p class="lead">
-            Add tasks, mark them complete, and delete them when they are no longer needed. The planner keeps data in
-            localStorage so the list survives refreshes.
-          </p>
-          <p>
-            This page shows JavaScript arrays, event handling, DOM updates, and persistence in one practical student
-            tool.
-          </p>
+          <h1>Keep the next task clear.</h1>
+          <p class="lead">A focused workspace for capturing coursework, tracking progress, and keeping study commitments visible.</p>
         </div>
       </section>
 
-      <section class="section container planner-layout">
-        <div class="planner-stack">
-          <article class="panel reveal">
-            <div class="section-heading" style="margin-bottom: 0.9rem;">
-              <div>
-                <p class="eyebrow">Add a task</p>
-                <h2>What needs attention next?</h2>
+      <section class="section container reveal">
+        <div class="planner-workspace">
+          <div class="planner-form-shell">
+            <p class="section-label">Add a task</p>
+            <form class="task-form" data-task-form novalidate>
+              <div class="task-form-row">
+                <div class="field"><label for="taskTitle">Task name</label><input id="taskTitle" name="task" type="text" placeholder="Finish the CSS review" aria-describedby="taskTitleError"></div>
+                <div class="field"><label for="taskCategory">Category</label><select id="taskCategory" name="category"><option>Study</option><option>Assignment</option><option>Project</option><option>Personal</option></select></div>
+                <div class="field"><label for="taskDate">Due date</label><input id="taskDate" name="dueDate" type="date"></div>
+                <button class="button button-primary" type="submit">Add task</button>
               </div>
-            </div>
-            <form class="task-form" data-task-form>
-              <div class="form-grid">
-                <div class="field">
-                  <label for="taskTitle">Task name</label>
-                  <input id="taskTitle" name="task" type="text" placeholder="e.g. Finish CSS review">
-                </div>
-                <div class="field">
-                  <label for="taskCategory">Category</label>
-                  <select id="taskCategory" name="category">
-                    <option>Study</option>
-                    <option>Assignment</option>
-                    <option>Project</option>
-                    <option>Personal</option>
-                  </select>
-                </div>
-                <div class="field">
-                  <label for="taskDate">Due date</label>
-                  <input id="taskDate" name="dueDate" type="date">
-                </div>
-                <div class="field">
-                  <label for="taskNote">Note</label>
-                  <input id="taskNote" name="note" type="text" placeholder="Optional reminder">
-                </div>
+              <div class="task-note-row">
+                <div class="field"><label for="taskNote">Note <span aria-hidden="true">(optional)</span></label><input id="taskNote" name="note" type="text" placeholder="Add useful context or a reminder"></div>
+                <p class="field-error" id="taskTitleError" data-task-error role="alert"></p>
               </div>
-              <button class="button button-primary" type="submit">Add task</button>
             </form>
-          </article>
+          </div>
 
-          <article class="panel reveal">
-            <div class="section-heading" style="margin-bottom: 0.9rem;">
-              <div>
-                <p class="eyebrow">Task list</p>
-                <h2>Live planning board</h2>
-              </div>
-              <p>Counts update automatically as tasks are added, completed, or removed.</p>
+          <div class="planner-toolbar">
+            <div class="planner-stats" aria-label="Task progress">
+              <span><strong data-task-total>0</strong> total</span>
+              <span><strong data-task-completed>0</strong> done</span>
+              <span><strong data-task-remaining>0</strong> left</span>
             </div>
-            <ul class="task-list" data-task-list></ul>
-          </article>
+            <div class="planner-filters" aria-label="Filter tasks">
+              <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="filter-button" type="button" data-filter="active" aria-pressed="false">Active</button>
+              <button class="filter-button" type="button" data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+          </div>
+          <ul class="task-list" data-task-list aria-live="polite"></ul>
         </div>
+      </section>
 
-        <aside class="planner-stack">
-          <article class="summary-card reveal">
-            <span class="card-kicker">Planner stats</span>
-            <h3>Current workload</h3>
-            <div class="summary-grid" style="margin-top: 1rem;">
-              <article class="mini-card">
-                <span class="card-kicker">Total</span>
-                <h3 data-task-total>0</h3>
-                <p>tasks</p>
-              </article>
-              <article class="mini-card">
-                <span class="card-kicker">Done</span>
-                <h3 data-task-completed>0</h3>
-                <p>completed</p>
-              </article>
-              <article class="mini-card">
-                <span class="card-kicker">Left</span>
-                <h3 data-task-remaining>0</h3>
-                <p>remaining</p>
-              </article>
-            </div>
-          </article>
-
-          <article class="contact-card reveal">
-            <h3>Study rhythm</h3>
-            <ul>
-              <li><strong>Morning:</strong> review lecture notes and plan the day.</li>
-              <li><strong>Afternoon:</strong> code, test, and refine project work.</li>
-              <li><strong>Evening:</strong> clear small tasks and update tomorrow's list.</li>
-            </ul>
-          </article>
-
-          <article class="contact-card reveal">
-            <h3>Planner tips</h3>
-            <ul>
-              <li>Keep tasks short and specific.</li>
-              <li>Mark work complete as soon as it is done.</li>
-              <li>Use the note field for context or reminders.</li>
-            </ul>
-          </article>
-        </aside>
+      <section class="section container reveal">
+        <div class="planner-demo">
+          <div><p class="section-label">Planner in action</p><h2>A short look at the workflow.</h2><p class="lead">Add a task, mark it complete, and remove it when the work is cleared.</p></div>
+          <video controls muted loop playsinline preload="metadata" poster="assets/images/planner-demo-poster.svg">
+            <source src="assets/media/planner-demo.mp4" type="video/mp4">
+            Your browser does not support the planner demonstration video.
+          </video>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-shell">
-        <p>Built by Timothy Odebunmi for COS 106. <span data-current-year></span></p>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
+      <div class="container footer-shell"><p>Timothy Odebunmi / COS 106 / <span data-current-year></span></p><div class="footer-links"><a href="https://github.com/Brymes" target="_blank" rel="noreferrer noopener">GitHub</a><a href="https://www.linkedin.com/in/brymes" target="_blank" rel="noreferrer noopener">LinkedIn</a></div></div>
     </footer>
   </body>
 </html>
-

@@ -1,30 +1,20 @@
 # Timothy Odebunmi Portfolio + Academic Manager
 
-Responsive multi-page website built for COS 106 - Introduction to Web Technologies.
+A responsive, framework-free portfolio and academic management website built for COS 106 - Introduction to Web Technologies.
 
 ## Features
 
-- Home page with profile summary, welcome message, and audio intro
-- About page with educational background, goals, skills, hobbies, and an education table
-- Projects page with three resume-inspired case studies rendered from JavaScript data
-- Academic planner with add, complete, delete, and localStorage persistence
-- Contact form with JavaScript validation for required fields, email format, and digit-only phone numbers
-
-## Files
-
-- `index.html`
-- `about.html`
-- `projects.html`
-- `planner.html`
-- `contact.html`
-- `assets/css/styles.css`
-- `assets/js/main.js`
-- `assets/images/*.svg`
-- `assets/media/intro.wav`
+- Editorial home page with profile summary and professional links
+- About page with education timeline, technical skills, interests, and a semantic table
+- Three verified GitHub projects rendered dynamically from a JavaScript array
+- Academic planner with add, complete, delete, filter, progress, and `localStorage` persistence
+- Muted local planner demonstration video for the multimedia requirement
+- Contact form with inline validation for required fields, email format, and digit-only phone numbers
+- Responsive navigation, keyboard focus states, and reduced-motion support
 
 ## Preview
 
-Open `index.html` directly in a browser or run a simple local server:
+Open `index.html` directly or run a local server:
 
 ```bash
 python3 -m http.server 8000
@@ -35,4 +25,4 @@ Then visit `http://localhost:8000`.
 ## Deployment
 
 - GitHub repository: [Brymes/timothy-odebunmi-portfolio](https://github.com/Brymes/timothy-odebunmi-portfolio)
-- GitHub Pages: [https://brymes.github.io/timothy-odebunmi-portfolio/](https://brymes.github.io/timothy-odebunmi-portfolio/)
+- GitHub Pages: [brymes.github.io/timothy-odebunmi-portfolio](https://brymes.github.io/timothy-odebunmi-portfolio/)
