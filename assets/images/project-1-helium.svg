@@ -1,0 +1,65 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p1Title p1Desc">
+  <title id="p1Title">Helium reward pipeline mockup</title>
+  <desc id="p1Desc">A dashboard-style illustration showing ETL metrics, a pipeline flow, and reward charts.</desc>
+  <defs>
+    <linearGradient id="p1bg" x1="180" y1="70" x2="1020" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2036"/>
+      <stop offset="1" stop-color="#07111D"/>
+    </linearGradient>
+    <linearGradient id="p1accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#31D0C7"/>
+      <stop offset="1" stop-color="#F0C766"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="40" fill="url(#p1bg)"/>
+  <rect x="56" y="56" width="1088" height="688" rx="30" fill="rgba(255,255,255,0.04)" stroke="#93A9C5" stroke-opacity=".18"/>
+  <rect x="90" y="90" width="1020" height="76" rx="20" fill="#0F1F33" stroke="#93A9C5" stroke-opacity=".16"/>
+  <circle cx="132" cy="128" r="14" fill="#31D0C7"/>
+  <circle cx="172" cy="128" r="14" fill="#F0C766"/>
+  <circle cx="212" cy="128" r="14" fill="#8CC4FF"/>
+  <text x="1010" y="138" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="end">Reward Pipeline Monitor</text>
+  <rect x="90" y="194" width="292" height="132" rx="24" fill="#10243B" stroke="#93A9C5" stroke-opacity=".14"/>
+  <rect x="406" y="194" width="292" height="132" rx="24" fill="#10243B" stroke="#93A9C5" stroke-opacity=".14"/>
+  <rect x="722" y="194" width="388" height="132" rx="24" fill="#10243B" stroke="#93A9C5" stroke-opacity=".14"/>
+  <text x="130" y="244" fill="#A7B9D4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="20">Devices synced</text>
+  <text x="130" y="292" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="46" font-weight="800">50k+</text>
+  <text x="445" y="244" fill="#A7B9D4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="20">Reward files</text>
+  <text x="445" y="292" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="46" font-weight="800">Daily ETL</text>
+  <text x="760" y="244" fill="#A7B9D4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="20">Pipeline health</text>
+  <text x="760" y="292" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="46" font-weight="800">Stable</text>
+  <rect x="90" y="358" width="582" height="318" rx="28" fill="#0F1F33" stroke="#93A9C5" stroke-opacity=".14"/>
+  <text x="126" y="402" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="24" font-weight="700">Reward ingestion chart</text>
+  <rect x="126" y="442" width="36" height="174" rx="14" fill="#31D0C7"/>
+  <rect x="182" y="398" width="36" height="218" rx="14" fill="#6BE8DE"/>
+  <rect x="238" y="470" width="36" height="146" rx="14" fill="#8CC4FF"/>
+  <rect x="294" y="432" width="36" height="184" rx="14" fill="#F0C766"/>
+  <rect x="350" y="378" width="36" height="238" rx="14" fill="#31D0C7"/>
+  <rect x="406" y="416" width="36" height="200" rx="14" fill="#6BE8DE"/>
+  <rect x="462" y="452" width="36" height="164" rx="14" fill="#8CC4FF"/>
+  <rect x="518" y="404" width="36" height="212" rx="14" fill="#F0C766"/>
+  <rect x="574" y="438" width="36" height="178" rx="14" fill="url(#p1accent)"/>
+  <path d="M170 452H246" stroke="#93A9C5" stroke-opacity=".22" stroke-width="4"/>
+  <path d="M226 408H302" stroke="#93A9C5" stroke-opacity=".22" stroke-width="4"/>
+  <path d="M282 480H358" stroke="#93A9C5" stroke-opacity=".22" stroke-width="4"/>
+  <path d="M338 442H414" stroke="#93A9C5" stroke-opacity=".22" stroke-width="4"/>
+  <path d="M394 388H470" stroke="#93A9C5" stroke-opacity=".22" stroke-width="4"/>
+  <rect x="716" y="358" width="392" height="150" rx="28" fill="#0F1F33" stroke="#93A9C5" stroke-opacity=".14"/>
+  <text x="752" y="402" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="24" font-weight="700">Pipeline flow</text>
+  <rect x="752" y="428" width="92" height="56" rx="18" fill="#31D0C7" fill-opacity=".18" stroke="#31D0C7" stroke-opacity=".45"/>
+  <rect x="884" y="428" width="92" height="56" rx="18" fill="#F0C766" fill-opacity=".16" stroke="#F0C766" stroke-opacity=".45"/>
+  <rect x="1016" y="428" width="56" height="56" rx="18" fill="#8CC4FF" fill-opacity=".16" stroke="#8CC4FF" stroke-opacity=".45"/>
+  <path d="M844 456H884" stroke="#93A9C5" stroke-width="3"/>
+  <path d="M976 456H1016" stroke="#93A9C5" stroke-width="3"/>
+  <text x="798" y="462" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">S3</text>
+  <text x="930" y="462" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">ClickHouse</text>
+  <text x="1044" y="462" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Payout</text>
+  <rect x="716" y="532" width="392" height="144" rx="28" fill="#0F1F33" stroke="#93A9C5" stroke-opacity=".14"/>
+  <text x="752" y="576" fill="#EDF4FF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="24" font-weight="700">Operational status</text>
+  <circle cx="770" cy="620" r="10" fill="#31D0C7"/>
+  <text x="794" y="626" fill="#A7B9D4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18">ETL complete</text>
+  <circle cx="940" cy="620" r="10" fill="#F0C766"/>
+  <text x="964" y="626" fill="#A7B9D4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18">Checks passed</text>
+  <circle cx="1090" cy="620" r="10" fill="#8CC4FF"/>
+  <text x="1114" y="626" fill="#A7B9D4" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="18">Ready</text>
+</svg>
+

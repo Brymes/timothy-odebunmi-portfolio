@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta
+      name="description"
+      content="Three resume-inspired project case studies with mock screenshots and links."
+    >
+    <title>Timothy Odebunmi | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TO</span>
+          <span>
+            <strong>Timothy Odebunmi</strong>
+            <small>Student portfolio and planner</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+          <span>Menu</span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" data-nav-panel aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Academic Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Projects</p>
+          <h1>Three sample projects with real engineering flavor.</h1>
+          <p class="lead">
+            These case studies are inspired by the work and systems in my resume. The cards are rendered with JavaScript
+            so the page also demonstrates dynamic content generation.
+          </p>
+          <p>
+            Each sample includes a screenshot-style visual, a short description, measurable impact, and a pair of links
+            to simulate a product demo and source repository.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Portfolio samples</p>
+            <h2>Case studies built from my actual experience.</h2>
+          </div>
+          <p>
+            The project cards below are injected from a JavaScript array so the assignment also shows DOM rendering and
+            structured data handling.
+          </p>
+        </div>
+        <div class="project-grid" data-project-grid>
+          <article class="panel">
+            <p class="empty-state">Loading project cards...</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="summary-grid">
+          <article class="mini-card">
+            <span class="card-kicker">Pattern</span>
+            <h3>Data-first systems</h3>
+            <p>I enjoy pipelines and infrastructure that make decisions visible and repeatable.</p>
+          </article>
+          <article class="mini-card">
+            <span class="card-kicker">UI</span>
+            <h3>Clear presentation</h3>
+            <p>Even technical work benefits from clean layouts, readable states, and obvious actions.</p>
+          </article>
+          <article class="mini-card">
+            <span class="card-kicker">Links</span>
+            <h3>Real or simulated</h3>
+            <p>The links are intentionally present so each project feels like a proper product entry.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Built by Timothy Odebunmi for COS 106. <span data-current-year></span></p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

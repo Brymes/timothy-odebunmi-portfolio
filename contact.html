@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta
+      name="description"
+      content="Contact Timothy Odebunmi using a validated form with name, email, phone number, and message."
+    >
+    <title>Timothy Odebunmi | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TO</span>
+          <span>
+            <strong>Timothy Odebunmi</strong>
+            <small>Student portfolio and planner</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+          <span>Menu</span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" data-nav-panel aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Academic Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h1>Say hello or send feedback.</h1>
+          <p class="lead">
+            This form is validated entirely with JavaScript. It checks for empty fields, a proper email pattern, and a
+            phone number made up only of digits.
+          </p>
+          <p>
+            If the form is valid, a success message appears immediately. That keeps the assignment self-contained while
+            still demonstrating real validation behavior.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container contact-layout">
+        <form class="contact-form panel reveal" data-contact-form novalidate>
+          <div class="section-heading" style="margin-bottom: 0.9rem;">
+            <div>
+              <p class="eyebrow">Get in touch</p>
+              <h2>Send a direct message</h2>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="contactName">Name</label>
+            <input id="contactName" name="name" type="text" autocomplete="name" placeholder="Your full name">
+            <p class="field-error" data-error-for="name"></p>
+          </div>
+
+          <div class="field">
+            <label for="contactEmail">Email address</label>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+            <p class="field-error" data-error-for="email"></p>
+          </div>
+
+          <div class="field">
+            <label for="contactPhone">Phone number</label>
+            <input id="contactPhone" name="phone" type="tel" autocomplete="tel" placeholder="Digits only">
+            <p class="field-error" data-error-for="phone"></p>
+          </div>
+
+          <div class="field">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="6" placeholder="Tell me how I can help"></textarea>
+            <p class="field-error" data-error-for="message"></p>
+          </div>
+
+          <button class="button button-primary" type="submit">Send message</button>
+          <div class="form-success" data-contact-success hidden role="status" aria-live="polite"></div>
+        </form>
+
+        <aside class="planner-stack">
+          <article class="contact-card reveal">
+            <h3>Direct links</h3>
+            <ul>
+              <li>
+                <strong>Email</strong>
+                <span><a href="mailto:tbodebunmijnr@gmail.com">tbodebunmijnr@gmail.com</a></span>
+              </li>
+              <li>
+                <strong>LinkedIn</strong>
+                <span><a href="https://www.linkedin.com/in/brymes" target="_blank" rel="noreferrer noopener">Profile</a></span>
+              </li>
+              <li>
+                <strong>GitHub</strong>
+                <span><a href="https://github.com/Brymes" target="_blank" rel="noreferrer noopener">Repositories</a></span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="contact-card reveal">
+            <h3>Best topics to reach out about</h3>
+            <ul>
+              <li>Frontend layout and responsive design</li>
+              <li>Backend engineering and data pipelines</li>
+              <li>Academic planning and project organization</li>
+            </ul>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Built by Timothy Odebunmi for COS 106. <span data-current-year></span></p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta
+      name="description"
+      content="Interactive academic planner with add, complete, and delete task functionality."
+    >
+    <title>Timothy Odebunmi | Academic Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="planner">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TO</span>
+          <span>
+            <strong>Timothy Odebunmi</strong>
+            <small>Student portfolio and planner</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+          <span>Menu</span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" data-nav-panel aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Academic Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Academic planner</p>
+          <h1>Manage study tasks without losing momentum.</h1>
+          <p class="lead">
+            Add tasks, mark them complete, and delete them when they are no longer needed. The planner keeps data in
+            localStorage so the list survives refreshes.
+          </p>
+          <p>
+            This page shows JavaScript arrays, event handling, DOM updates, and persistence in one practical student
+            tool.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container planner-layout">
+        <div class="planner-stack">
+          <article class="panel reveal">
+            <div class="section-heading" style="margin-bottom: 0.9rem;">
+              <div>
+                <p class="eyebrow">Add a task</p>
+                <h2>What needs attention next?</h2>
+              </div>
+            </div>
+            <form class="task-form" data-task-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="taskTitle">Task name</label>
+                  <input id="taskTitle" name="task" type="text" placeholder="e.g. Finish CSS review">
+                </div>
+                <div class="field">
+                  <label for="taskCategory">Category</label>
+                  <select id="taskCategory" name="category">
+                    <option>Study</option>
+                    <option>Assignment</option>
+                    <option>Project</option>
+                    <option>Personal</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="taskDate">Due date</label>
+                  <input id="taskDate" name="dueDate" type="date">
+                </div>
+                <div class="field">
+                  <label for="taskNote">Note</label>
+                  <input id="taskNote" name="note" type="text" placeholder="Optional reminder">
+                </div>
+              </div>
+              <button class="button button-primary" type="submit">Add task</button>
+            </form>
+          </article>
+
+          <article class="panel reveal">
+            <div class="section-heading" style="margin-bottom: 0.9rem;">
+              <div>
+                <p class="eyebrow">Task list</p>
+                <h2>Live planning board</h2>
+              </div>
+              <p>Counts update automatically as tasks are added, completed, or removed.</p>
+            </div>
+            <ul class="task-list" data-task-list></ul>
+          </article>
+        </div>
+
+        <aside class="planner-stack">
+          <article class="summary-card reveal">
+            <span class="card-kicker">Planner stats</span>
+            <h3>Current workload</h3>
+            <div class="summary-grid" style="margin-top: 1rem;">
+              <article class="mini-card">
+                <span class="card-kicker">Total</span>
+                <h3 data-task-total>0</h3>
+                <p>tasks</p>
+              </article>
+              <article class="mini-card">
+                <span class="card-kicker">Done</span>
+                <h3 data-task-completed>0</h3>
+                <p>completed</p>
+              </article>
+              <article class="mini-card">
+                <span class="card-kicker">Left</span>
+                <h3 data-task-remaining>0</h3>
+                <p>remaining</p>
+              </article>
+            </div>
+          </article>
+
+          <article class="contact-card reveal">
+            <h3>Study rhythm</h3>
+            <ul>
+              <li><strong>Morning:</strong> review lecture notes and plan the day.</li>
+              <li><strong>Afternoon:</strong> code, test, and refine project work.</li>
+              <li><strong>Evening:</strong> clear small tasks and update tomorrow's list.</li>
+            </ul>
+          </article>
+
+          <article class="contact-card reveal">
+            <h3>Planner tips</h3>
+            <ul>
+              <li>Keep tasks short and specific.</li>
+              <li>Mark work complete as soon as it is done.</li>
+              <li>Use the note field for context or reminders.</li>
+            </ul>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Built by Timothy Odebunmi for COS 106. <span data-current-year></span></p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
