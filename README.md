@@ -34,6 +34,5 @@ Then visit `http://localhost:8000`.
 
 ## Deployment
 
-- GitHub repository: to be added after publishing
-- GitHub Pages: to be added after deployment
-
+- GitHub repository: [Brymes/timothy-odebunmi-portfolio](https://github.com/Brymes/timothy-odebunmi-portfolio)
+- GitHub Pages: [https://brymes.github.io/timothy-odebunmi-portfolio/](https://brymes.github.io/timothy-odebunmi-portfolio/)
